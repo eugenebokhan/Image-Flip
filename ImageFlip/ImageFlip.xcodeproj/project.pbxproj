@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		182315D024163CCD00DB9A1D /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 182315CF24163CCD00DB9A1D /* Shaders.metal */; };
+		182315D224163ED300DB9A1D /* Shaders.metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182315D124163ED300DB9A1D /* Shaders.metal.swift */; };
 		1860D3F024156A160001DD63 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1860D3EF24156A160001DD63 /* swiftgen.yml */; };
 		1860D3F424156C4B0001DD63 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860D3F324156C4B0001DD63 /* Images.swift */; };
 		18AACD2B23C7A66C00B47ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AACD2A23C7A66C00B47ECE /* AppDelegate.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		0E32DA30C1BEE4923AF00B78 /* Pods-ImageFlip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageFlip.debug.xcconfig"; path = "Target Support Files/Pods-ImageFlip/Pods-ImageFlip.debug.xcconfig"; sourceTree = "<group>"; };
+		182315CF24163CCD00DB9A1D /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		182315D124163ED300DB9A1D /* Shaders.metal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shaders.metal.swift; sourceTree = "<group>"; };
 		1860D3EF24156A160001DD63 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		1860D3F324156C4B0001DD63 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		18AACD2723C7A66C00B47ECE /* ImageFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,8 @@
 			children = (
 				18AACD2A23C7A66C00B47ECE /* AppDelegate.swift */,
 				18AACD2E23C7A66C00B47ECE /* ViewController.swift */,
+				182315CF24163CCD00DB9A1D /* Shaders.metal */,
+				182315D124163ED300DB9A1D /* Shaders.metal.swift */,
 				1860D3F224156ADC0001DD63 /* Resources */,
 				18AACD3523C7A66D00B47ECE /* LaunchScreen.storyboard */,
 				18E313DA2415612C005D9FD1 /* ImageFlip.entitlements */,
@@ -233,6 +239,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				182315D224163ED300DB9A1D /* Shaders.metal.swift in Sources */,
+				182315D024163CCD00DB9A1D /* Shaders.metal in Sources */,
 				18AACD2F23C7A66C00B47ECE /* ViewController.swift in Sources */,
 				1860D3F424156C4B0001DD63 /* Images.swift in Sources */,
 				18AACD2B23C7A66C00B47ECE /* AppDelegate.swift in Sources */,

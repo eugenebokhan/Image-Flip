@@ -6,7 +6,7 @@ use_frameworks!
 install! 'cocoapods', :disable_input_output_paths => true
 
 target 'ImageFlip' do
-  pod 'Alloy/Shaders'
+  pod 'Alloy/Shaders', :git => 'https://github.com/s1ddok/Alloy.git', :branch => 'fix-isAccessibleOnCPU'
   pod 'SnapKit'
   pod 'PHAssetPicker', '1.0.2'
   pod 'MetalView', '1.0.0'
