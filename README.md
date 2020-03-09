@@ -1,1 +1,1 @@
-# Image-Flip
+# Flip an image using Metal. Example app.
