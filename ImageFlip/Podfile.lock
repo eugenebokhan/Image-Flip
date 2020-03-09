@@ -1,0 +1,51 @@
+PODS:
+  - Alloy (0.13.3):
+    - Alloy/Core (= 0.13.3)
+  - Alloy/Core (0.13.3)
+  - Alloy/Shaders (0.13.3):
+    - Alloy/Core
+  - MetalView (1.0.0):
+    - Alloy (~> 0.13.2)
+    - SwiftMath (~> 3.2.1)
+  - PHAssetPicker (1.0.2):
+    - SnapKit
+  - SnapKit (5.0.1)
+  - SwiftGen (6.1.0)
+  - SwiftMath (3.2.1)
+
+DEPENDENCIES:
+  - Alloy/Shaders (from `https://github.com/s1ddok/Alloy.git`, branch `fix-isAccessibleOnCPU`)
+  - MetalView (= 1.0.0)
+  - PHAssetPicker (= 1.0.2)
+  - SnapKit
+  - SwiftGen
+
+SPEC REPOS:
+  trunk:
+    - MetalView
+    - PHAssetPicker
+    - SnapKit
+    - SwiftGen
+    - SwiftMath
+
+EXTERNAL SOURCES:
+  Alloy:
+    :branch: fix-isAccessibleOnCPU
+    :git: https://github.com/s1ddok/Alloy.git
+
+CHECKOUT OPTIONS:
+  Alloy:
+    :commit: f588da580313eebc27e2ce8735fbebc3e2a07362
+    :git: https://github.com/s1ddok/Alloy.git
+
+SPEC CHECKSUMS:
+  Alloy: 152b2fb6d5b96a1725a659af6c42a67c6ea35977
+  MetalView: d330ef8e07364cdd726ac3fe43e2de2d7a89755a
+  PHAssetPicker: 6e9f80cac00b7c91c0f2c0b36fb2f7ac9c88a606
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftMath: 5ae74160b077a63752d6cce4fbe85657dad6b534
+
+PODFILE CHECKSUM: e4689f54a0e0483a9c87ab21d9936e4ba41c998e
+
+COCOAPODS: 1.9.0

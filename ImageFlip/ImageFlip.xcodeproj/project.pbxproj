@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		182315D024163CCD00DB9A1D /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 182315CF24163CCD00DB9A1D /* Shaders.metal */; };
+		182315D224163ED300DB9A1D /* Shaders.metal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 182315D124163ED300DB9A1D /* Shaders.metal.swift */; };
+		1860D3F024156A160001DD63 /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 1860D3EF24156A160001DD63 /* swiftgen.yml */; };
+		1860D3F424156C4B0001DD63 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1860D3F324156C4B0001DD63 /* Images.swift */; };
+		18AACD2B23C7A66C00B47ECE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AACD2A23C7A66C00B47ECE /* AppDelegate.swift */; };
+		18AACD2F23C7A66C00B47ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AACD2E23C7A66C00B47ECE /* ViewController.swift */; };
+		18AACD3423C7A66D00B47ECE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AACD3323C7A66D00B47ECE /* Images.xcassets */; };
+		18AACD3723C7A66D00B47ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AACD3523C7A66D00B47ECE /* LaunchScreen.storyboard */; };
+		4BAF134DC5CC95E3FC5D5115 /* Pods_ImageFlip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4893839271721121409AED75 /* Pods_ImageFlip.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0E32DA30C1BEE4923AF00B78 /* Pods-ImageFlip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageFlip.debug.xcconfig"; path = "Target Support Files/Pods-ImageFlip/Pods-ImageFlip.debug.xcconfig"; sourceTree = "<group>"; };
+		182315CF24163CCD00DB9A1D /* Shaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		182315D124163ED300DB9A1D /* Shaders.metal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Shaders.metal.swift; sourceTree = "<group>"; };
+		1860D3EF24156A160001DD63 /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
+		1860D3F324156C4B0001DD63 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		18AACD2723C7A66C00B47ECE /* ImageFlip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFlip.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AACD2A23C7A66C00B47ECE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18AACD2E23C7A66C00B47ECE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18AACD3323C7A66D00B47ECE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		18AACD3623C7A66D00B47ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		18AACD3823C7A66D00B47ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18E313DA2415612C005D9FD1 /* ImageFlip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageFlip.entitlements; sourceTree = "<group>"; };
+		4893839271721121409AED75 /* Pods_ImageFlip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageFlip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE3988EAB4D280DF3C14460F /* Pods-ImageFlip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageFlip.release.xcconfig"; path = "Target Support Files/Pods-ImageFlip/Pods-ImageFlip.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18AACD2423C7A66C00B47ECE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BAF134DC5CC95E3FC5D5115 /* Pods_ImageFlip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1860D3F224156ADC0001DD63 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18AACD3323C7A66D00B47ECE /* Images.xcassets */,
+				1860D3EF24156A160001DD63 /* swiftgen.yml */,
+				1860D3F324156C4B0001DD63 /* Images.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		18AACD1E23C7A66C00B47ECE = {
+			isa = PBXGroup;
+			children = (
+				18AACD2923C7A66C00B47ECE /* ImageFlip */,
+				18AACD2823C7A66C00B47ECE /* Products */,
+				8A38780B4ADDCB0A13602426 /* Pods */,
+				B1E840CEFE43501EE06513EF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		18AACD2823C7A66C00B47ECE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18AACD2723C7A66C00B47ECE /* ImageFlip.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18AACD2923C7A66C00B47ECE /* ImageFlip */ = {
+			isa = PBXGroup;
+			children = (
+				18AACD2A23C7A66C00B47ECE /* AppDelegate.swift */,
+				18AACD2E23C7A66C00B47ECE /* ViewController.swift */,
+				182315CF24163CCD00DB9A1D /* Shaders.metal */,
+				182315D124163ED300DB9A1D /* Shaders.metal.swift */,
+				1860D3F224156ADC0001DD63 /* Resources */,
+				18AACD3523C7A66D00B47ECE /* LaunchScreen.storyboard */,
+				18E313DA2415612C005D9FD1 /* ImageFlip.entitlements */,
+				18AACD3823C7A66D00B47ECE /* Info.plist */,
+			);
+			path = ImageFlip;
+			sourceTree = "<group>";
+		};
+		8A38780B4ADDCB0A13602426 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0E32DA30C1BEE4923AF00B78 /* Pods-ImageFlip.debug.xcconfig */,
+				BE3988EAB4D280DF3C14460F /* Pods-ImageFlip.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B1E840CEFE43501EE06513EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4893839271721121409AED75 /* Pods_ImageFlip.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18AACD2623C7A66C00B47ECE /* ImageFlip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18AACD3B23C7A66D00B47ECE /* Build configuration list for PBXNativeTarget "ImageFlip" */;
+			buildPhases = (
+				9DD2E6D3BE5D4110C460F019 /* [CP] Check Pods Manifest.lock */,
+				1860D3F124156AAE0001DD63 /* SwiftGen */,
+				18AACD2323C7A66C00B47ECE /* Sources */,
+				18AACD2423C7A66C00B47ECE /* Frameworks */,
+				18AACD2523C7A66C00B47ECE /* Resources */,
+				B496A0EDFEB758E5D5EC961C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageFlip;
+			productName = "Flip a Picture";
+			productReference = 18AACD2723C7A66C00B47ECE /* ImageFlip.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18AACD1F23C7A66C00B47ECE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Eugene Bokhan";
+				TargetAttributes = {
+					18AACD2623C7A66C00B47ECE = {
+						CreatedOnToolsVersion = 11.3;
+					};
+				};
+			};
+			buildConfigurationList = 18AACD2223C7A66C00B47ECE /* Build configuration list for PBXProject "ImageFlip" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18AACD1E23C7A66C00B47ECE;
+			productRefGroup = 18AACD2823C7A66C00B47ECE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18AACD2623C7A66C00B47ECE /* ImageFlip */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18AACD2523C7A66C00B47ECE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AACD3723C7A66D00B47ECE /* LaunchScreen.storyboard in Resources */,
+				18AACD3423C7A66D00B47ECE /* Images.xcassets in Resources */,
+				1860D3F024156A160001DD63 /* swiftgen.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1860D3F124156AAE0001DD63 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen config run --config $SRCROOT/ImageFlip/Resources/swiftgen.yml\n";
+		};
+		9DD2E6D3BE5D4110C460F019 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageFlip-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B496A0EDFEB758E5D5EC961C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageFlip/Pods-ImageFlip-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18AACD2323C7A66C00B47ECE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				182315D224163ED300DB9A1D /* Shaders.metal.swift in Sources */,
+				182315D024163CCD00DB9A1D /* Shaders.metal in Sources */,
+				18AACD2F23C7A66C00B47ECE /* ViewController.swift in Sources */,
+				1860D3F424156C4B0001DD63 /* Images.swift in Sources */,
+				18AACD2B23C7A66C00B47ECE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		18AACD3523C7A66D00B47ECE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18AACD3623C7A66D00B47ECE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18AACD3923C7A66D00B47ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18AACD3A23C7A66D00B47ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		18AACD3C23C7A66D00B47ECE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E32DA30C1BEE4923AF00B78 /* Pods-ImageFlip.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImageFlip/ImageFlip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 63TG84TE66;
+				INFOPLIST_FILE = "$(SRCROOT)/ImageFlip/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eugenebokhan.ImageFlip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		18AACD3D23C7A66D00B47ECE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE3988EAB4D280DF3C14460F /* Pods-ImageFlip.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ImageFlip/ImageFlip.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_TEAM = 63TG84TE66;
+				INFOPLIST_FILE = "$(SRCROOT)/ImageFlip/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eugenebokhan.ImageFlip;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18AACD2223C7A66C00B47ECE /* Build configuration list for PBXProject "ImageFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AACD3923C7A66D00B47ECE /* Debug */,
+				18AACD3A23C7A66D00B47ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18AACD3B23C7A66D00B47ECE /* Build configuration list for PBXNativeTarget "ImageFlip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18AACD3C23C7A66D00B47ECE /* Debug */,
+				18AACD3D23C7A66D00B47ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18AACD1F23C7A66C00B47ECE /* Project object */;
+}

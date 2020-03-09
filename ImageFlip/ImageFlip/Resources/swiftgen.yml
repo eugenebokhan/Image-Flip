@@ -1,0 +1,6 @@
+xcassets:
+  inputs:
+    - Images.xcassets
+  outputs:
+    - templateName: swift4
+      output: Images.swift
