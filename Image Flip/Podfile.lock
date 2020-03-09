@@ -1,0 +1,45 @@
+PODS:
+  - Alloy (0.13.2):
+    - Alloy/Core (= 0.13.2)
+  - Alloy/Core (0.13.2)
+  - Alloy/Shaders (0.13.2):
+    - Alloy/Core
+  - MetalView (1.0.0):
+    - Alloy (~> 0.13.2)
+    - SwiftMath (~> 3.2.1)
+  - PHAssetPicker (1.0.2):
+    - SnapKit
+  - SnapKit (5.0.1)
+  - SwiftGen (6.1.0)
+  - SwiftMath (3.2.1)
+
+DEPENDENCIES:
+  - Alloy/Shaders
+  - MetalView (from `~/github/eugenebokhan/MetalView`)
+  - PHAssetPicker (= 1.0.2)
+  - SnapKit
+  - SwiftGen
+
+SPEC REPOS:
+  trunk:
+    - Alloy
+    - PHAssetPicker
+    - SnapKit
+    - SwiftGen
+    - SwiftMath
+
+EXTERNAL SOURCES:
+  MetalView:
+    :path: "~/github/eugenebokhan/MetalView"
+
+SPEC CHECKSUMS:
+  Alloy: c6f0995da7dc73dca375e530c30b3a79a9228526
+  MetalView: d330ef8e07364cdd726ac3fe43e2de2d7a89755a
+  PHAssetPicker: 6e9f80cac00b7c91c0f2c0b36fb2f7ac9c88a606
+  SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
+  SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
+  SwiftMath: 5ae74160b077a63752d6cce4fbe85657dad6b534
+
+PODFILE CHECKSUM: bd73d3f078134766a3f2e09c92db359e3e48feac
+
+COCOAPODS: 1.9.0
