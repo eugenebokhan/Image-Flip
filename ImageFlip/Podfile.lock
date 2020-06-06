@@ -1,51 +1,62 @@
 PODS:
-  - Alloy (0.13.3):
-    - Alloy/Core (= 0.13.3)
-  - Alloy/Core (0.13.3)
-  - Alloy/Shaders (0.13.3):
+  - Alloy (0.14.1):
+    - Alloy/Core (= 0.14.1)
+  - Alloy/Core (0.14.1)
+  - Alloy/Shaders (0.14.1):
     - Alloy/Core
-  - MetalView (1.0.0):
-    - Alloy (~> 0.13.2)
+  - Bonjour (2.0.0)
+  - DeviceKit (3.2.0)
+  - MetalView (1.0.1):
+    - Alloy (~> 0.14.1)
     - SwiftMath (~> 3.2.1)
-  - PHAssetPicker (1.0.2):
+  - PHAssetPicker (1.0.4):
     - SnapKit
+  - ResourcesBridge (0.0.1):
+    - Bonjour (~> 2.0.0)
   - SnapKit (5.0.1)
   - SwiftGen (6.1.0)
   - SwiftMath (3.2.1)
+  - SwiftSnapshotTesting (0.0.1):
+    - Alloy/Shaders
+    - DeviceKit
+    - ResourcesBridge
 
 DEPENDENCIES:
-  - Alloy/Shaders (from `https://github.com/s1ddok/Alloy.git`, branch `fix-isAccessibleOnCPU`)
-  - MetalView (= 1.0.0)
-  - PHAssetPicker (= 1.0.2)
+  - Alloy/Shaders
+  - MetalView
+  - PHAssetPicker
   - SnapKit
   - SwiftGen
+  - SwiftSnapshotTesting (from `~/github/eugenebokhan/SwiftSnapshotTesting`)
 
 SPEC REPOS:
   trunk:
+    - Alloy
+    - Bonjour
+    - DeviceKit
     - MetalView
     - PHAssetPicker
+    - ResourcesBridge
     - SnapKit
     - SwiftGen
     - SwiftMath
 
 EXTERNAL SOURCES:
-  Alloy:
-    :branch: fix-isAccessibleOnCPU
-    :git: https://github.com/s1ddok/Alloy.git
-
-CHECKOUT OPTIONS:
-  Alloy:
-    :commit: f588da580313eebc27e2ce8735fbebc3e2a07362
-    :git: https://github.com/s1ddok/Alloy.git
+  SwiftSnapshotTesting:
+    :path: "~/github/eugenebokhan/SwiftSnapshotTesting"
 
 SPEC CHECKSUMS:
-  Alloy: 152b2fb6d5b96a1725a659af6c42a67c6ea35977
-  MetalView: d330ef8e07364cdd726ac3fe43e2de2d7a89755a
-  PHAssetPicker: 6e9f80cac00b7c91c0f2c0b36fb2f7ac9c88a606
+  Alloy: 699cc1a530ca68527ff2edea90584a68e72bd745
+  Bonjour: a52029bab80a09db135341bfbfbd174856081d0a
+  DeviceKit: d081659419cce07c0b5239dbc9fb39ed7413c7fe
+  MetalView: a5ed24394208ad036a5e34453bac9bee1928e36f
+  PHAssetPicker: a307f33bbe06cc98430d9116b72f4be0cca05971
+  ResourcesBridge: a807379462688203387b25180cbf6c5a30b04d9b
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftMath: 5ae74160b077a63752d6cce4fbe85657dad6b534
+  SwiftSnapshotTesting: c9eb87ec279ad9157930882666491bd6fc2bf362
 
-PODFILE CHECKSUM: e4689f54a0e0483a9c87ab21d9936e4ba41c998e
+PODFILE CHECKSUM: 5794ea8f7c4d0bf6edd8bb406c482aa5319a1928
 
-COCOAPODS: 1.9.0
+COCOAPODS: 1.9.3

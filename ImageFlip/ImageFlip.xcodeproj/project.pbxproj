@@ -15,8 +15,20 @@
 		18AACD2F23C7A66C00B47ECE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AACD2E23C7A66C00B47ECE /* ViewController.swift */; };
 		18AACD3423C7A66D00B47ECE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18AACD3323C7A66D00B47ECE /* Images.xcassets */; };
 		18AACD3723C7A66D00B47ECE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18AACD3523C7A66D00B47ECE /* LaunchScreen.storyboard */; };
+		18F37AE0248C045400F39873 /* ImageFlipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F37ADF248C045400F39873 /* ImageFlipUITests.swift */; };
 		4BAF134DC5CC95E3FC5D5115 /* Pods_ImageFlip.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4893839271721121409AED75 /* Pods_ImageFlip.framework */; };
+		51E7D01FCDF2986367055A85 /* Pods_ImageFlipUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB6D5098C6B481EF67DC80D9 /* Pods_ImageFlipUITests.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18F37AE2248C045400F39873 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18AACD1F23C7A66C00B47ECE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18AACD2623C7A66C00B47ECE;
+			remoteInfo = ImageFlip;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0E32DA30C1BEE4923AF00B78 /* Pods-ImageFlip.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageFlip.debug.xcconfig"; path = "Target Support Files/Pods-ImageFlip/Pods-ImageFlip.debug.xcconfig"; sourceTree = "<group>"; };
@@ -31,8 +43,14 @@
 		18AACD3623C7A66D00B47ECE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		18AACD3823C7A66D00B47ECE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		18E313DA2415612C005D9FD1 /* ImageFlip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ImageFlip.entitlements; sourceTree = "<group>"; };
+		18F37ADD248C045400F39873 /* ImageFlipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageFlipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18F37ADF248C045400F39873 /* ImageFlipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFlipUITests.swift; sourceTree = "<group>"; };
+		18F37AE1248C045400F39873 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4893839271721121409AED75 /* Pods_ImageFlip.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageFlip.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A28B4DA31A2FF5C4D618A5C /* Pods-ImageFlipUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageFlipUITests.debug.xcconfig"; path = "Target Support Files/Pods-ImageFlipUITests/Pods-ImageFlipUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D59322C098A82D198C2DA01 /* Pods-ImageFlipUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageFlipUITests.release.xcconfig"; path = "Target Support Files/Pods-ImageFlipUITests/Pods-ImageFlipUITests.release.xcconfig"; sourceTree = "<group>"; };
 		BE3988EAB4D280DF3C14460F /* Pods-ImageFlip.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageFlip.release.xcconfig"; path = "Target Support Files/Pods-ImageFlip/Pods-ImageFlip.release.xcconfig"; sourceTree = "<group>"; };
+		DB6D5098C6B481EF67DC80D9 /* Pods_ImageFlipUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageFlipUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +59,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				4BAF134DC5CC95E3FC5D5115 /* Pods_ImageFlip.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F37ADA248C045400F39873 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51E7D01FCDF2986367055A85 /* Pods_ImageFlipUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				18AACD2923C7A66C00B47ECE /* ImageFlip */,
+				18F37ADE248C045400F39873 /* ImageFlipUITests */,
 				18AACD2823C7A66C00B47ECE /* Products */,
 				8A38780B4ADDCB0A13602426 /* Pods */,
 				B1E840CEFE43501EE06513EF /* Frameworks */,
@@ -71,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				18AACD2723C7A66C00B47ECE /* ImageFlip.app */,
+				18F37ADD248C045400F39873 /* ImageFlipUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -90,11 +118,22 @@
 			path = ImageFlip;
 			sourceTree = "<group>";
 		};
+		18F37ADE248C045400F39873 /* ImageFlipUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18F37ADF248C045400F39873 /* ImageFlipUITests.swift */,
+				18F37AE1248C045400F39873 /* Info.plist */,
+			);
+			path = ImageFlipUITests;
+			sourceTree = "<group>";
+		};
 		8A38780B4ADDCB0A13602426 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0E32DA30C1BEE4923AF00B78 /* Pods-ImageFlip.debug.xcconfig */,
 				BE3988EAB4D280DF3C14460F /* Pods-ImageFlip.release.xcconfig */,
+				9A28B4DA31A2FF5C4D618A5C /* Pods-ImageFlipUITests.debug.xcconfig */,
+				9D59322C098A82D198C2DA01 /* Pods-ImageFlipUITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -103,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				4893839271721121409AED75 /* Pods_ImageFlip.framework */,
+				DB6D5098C6B481EF67DC80D9 /* Pods_ImageFlipUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -130,18 +170,42 @@
 			productReference = 18AACD2723C7A66C00B47ECE /* ImageFlip.app */;
 			productType = "com.apple.product-type.application";
 		};
+		18F37ADC248C045400F39873 /* ImageFlipUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18F37AE6248C045400F39873 /* Build configuration list for PBXNativeTarget "ImageFlipUITests" */;
+			buildPhases = (
+				CF90F2EF0E980C00A083986D /* [CP] Check Pods Manifest.lock */,
+				18F37AD9248C045400F39873 /* Sources */,
+				18F37ADA248C045400F39873 /* Frameworks */,
+				18F37ADB248C045400F39873 /* Resources */,
+				5C3E9ABF47C01E1C499D578C /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18F37AE3248C045400F39873 /* PBXTargetDependency */,
+			);
+			name = ImageFlipUITests;
+			productName = ImageFlipUITests;
+			productReference = 18F37ADD248C045400F39873 /* ImageFlipUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		18AACD1F23C7A66C00B47ECE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1150;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Eugene Bokhan";
 				TargetAttributes = {
 					18AACD2623C7A66C00B47ECE = {
 						CreatedOnToolsVersion = 11.3;
+					};
+					18F37ADC248C045400F39873 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 18AACD2623C7A66C00B47ECE;
 					};
 				};
 			};
@@ -159,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				18AACD2623C7A66C00B47ECE /* ImageFlip */,
+				18F37ADC248C045400F39873 /* ImageFlipUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -171,6 +236,13 @@
 				18AACD3723C7A66D00B47ECE /* LaunchScreen.storyboard in Resources */,
 				18AACD3423C7A66D00B47ECE /* Images.xcassets in Resources */,
 				1860D3F024156A160001DD63 /* swiftgen.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18F37ADB248C045400F39873 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +266,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "$PODS_ROOT/SwiftGen/bin/swiftgen config run --config $SRCROOT/ImageFlip/Resources/swiftgen.yml\n";
+		};
+		5C3E9ABF47C01E1C499D578C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageFlipUITests/Pods-ImageFlipUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 		9DD2E6D3BE5D4110C460F019 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -232,6 +319,28 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageFlip/Pods-ImageFlip-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		CF90F2EF0E980C00A083986D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageFlipUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -247,7 +356,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		18F37AD9248C045400F39873 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18F37AE0248C045400F39873 /* ImageFlipUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18F37AE3248C045400F39873 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18AACD2623C7A66C00B47ECE /* ImageFlip */;
+			targetProxy = 18F37AE2248C045400F39873 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		18AACD3523C7A66D00B47ECE /* LaunchScreen.storyboard */ = {
@@ -419,6 +544,48 @@
 			};
 			name = Release;
 		};
+		18F37AE4248C045400F39873 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9A28B4DA31A2FF5C4D618A5C /* Pods-ImageFlipUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TG84TE66;
+				INFOPLIST_FILE = ImageFlipUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.prisma.ImageFlipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageFlip;
+			};
+			name = Debug;
+		};
+		18F37AE5248C045400F39873 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D59322C098A82D198C2DA01 /* Pods-ImageFlipUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 63TG84TE66;
+				INFOPLIST_FILE = ImageFlipUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = ai.prisma.ImageFlipUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ImageFlip;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -436,6 +603,15 @@
 			buildConfigurations = (
 				18AACD3C23C7A66D00B47ECE /* Debug */,
 				18AACD3D23C7A66D00B47ECE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18F37AE6248C045400F39873 /* Build configuration list for PBXNativeTarget "ImageFlipUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18F37AE4248C045400F39873 /* Debug */,
+				18F37AE5248C045400F39873 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

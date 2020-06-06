@@ -5,10 +5,19 @@ source 'https://cdn.cocoapods.org/'
 use_frameworks!
 install! 'cocoapods', :disable_input_output_paths => true
 
-target 'ImageFlip' do
-  pod 'Alloy/Shaders', :git => 'https://github.com/s1ddok/Alloy.git', :branch => 'fix-isAccessibleOnCPU'
+def pods
+  pod 'Alloy/Shaders'
   pod 'SnapKit'
-  pod 'PHAssetPicker', '1.0.2'
-  pod 'MetalView', '1.0.0'
+  pod 'PHAssetPicker'
+  pod 'MetalView'
   pod 'SwiftGen'
+end
+
+target 'ImageFlip' do
+  pods
+end
+
+target 'ImageFlipUITests' do
+  pods
+  pod 'SwiftSnapshotTesting', :path => '~/github/eugenebokhan/SwiftSnapshotTesting'
 end

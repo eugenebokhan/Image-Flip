@@ -48,6 +48,7 @@ class ViewController: UIViewController {
             self.textureCopy = try .init(context: self.context)
             self.chooseImageButton = .init(type: .roundedRect)
             self.flipTextureButton = .init(type: .roundedRect)
+            self.flipTextureButton.accessibilityIdentifier = "FlipTextureButton"
             self.shareImageButton = .init(type: .roundedRect)
             self.assetPickerController = .init()
             self.assetPickerController
