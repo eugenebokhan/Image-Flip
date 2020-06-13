@@ -13,7 +13,7 @@ class MultipeerUITests: SnapshotTestCase {
     }
 
     override func setUpWithError() throws {
-        continueAfterFailure = false
+        self.continueAfterFailure = true
     }
 
     func testSnaphotting() throws {
@@ -21,19 +21,21 @@ class MultipeerUITests: SnapshotTestCase {
         defer { self.app.terminate() }
 
         let flipTextureButton = self.app.buttons["FlipTextureButton"]
-
+        
         try self.assert(element: flipTextureButton,
                         testName: self.testName(),
-                        recording: true)
-
+                        recording: false)
+        
         try self.assert(screenshot: self.app.screenshot(),
                         testName: self.testName(),
-                        recording: true)
-
+                        ignore: [.statusBar],
+                        recording: false)
+        
         flipTextureButton.tap()
-
+        
         try self.assert(screenshot: self.app.screenshot(),
                         testName: self.testName(),
-                        recording: true)
+                        ignore: [.statusBar],
+                        recording: false)
     }
 }

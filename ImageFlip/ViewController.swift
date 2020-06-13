@@ -203,8 +203,7 @@ class ViewController: UIViewController {
         self.texture = texture
 
         #if targetEnvironment(macCatalyst)
-        try? self.context
-                 .scheduleAndWait { commandBuffer in
+        try? self.context.scheduleAndWait { commandBuffer in
             commandBuffer.blit { blitEncoder in
                 blitEncoder.synchronize(resource: self.texture)
             }
@@ -217,11 +216,9 @@ class ViewController: UIViewController {
     private func redraw() {
         self.metalView.setNeedsAdaptToTextureInput()
         DispatchQueue.main.async {
-            try? self.context
-                     .schedule { commandBuffer in
-                self.metalView
-                    .draw(texture: self.texture,
-                          in: commandBuffer)
+            try? self.context.schedule { commandBuffer in
+                self.metalView.draw(texture: self.texture,
+                                    in: commandBuffer)
             }
         }
     }
@@ -250,27 +247,19 @@ class ViewController: UIViewController {
 
     @objc
     func flipTexture() {
-        try? self.context.schedule { commandBuffer in
-            let descriptor = self.texture.descriptor
-            descriptor.storageMode = .private
-            let temporaryImage = MPSTemporaryImage(commandBuffer: commandBuffer,
-                                                   textureDescriptor: descriptor)
-            defer { temporaryImage.readCount = 0 }
-            let temporaryTexture = temporaryImage.texture
-
-            commandBuffer.compute { commandEncoder in
-                self.textureFlip
-                    .encode(sourceTexture: self.texture,
-                            destinationTexture: temporaryTexture,
-                            using: commandEncoder)
-                self.textureCopy
-                    .encode(sourceTexture: temporaryTexture,
-                            destinationTexture: self.texture,
-                            using: commandEncoder)
-            }
-
-            commandBuffer.addCompletedHandler { _ in
-                self.redraw()
+        guard let temporaryTexture = try? self.texture.matchingTexture()
+        else { return }
+        self.metalView.setNeedsAdaptToTextureInput()
+        DispatchQueue.main.async {
+            try? self.context.scheduleAndWait { commandBuffer in
+                self.textureFlip(source: self.texture,
+                                 destination: temporaryTexture,
+                                 in: commandBuffer)
+                self.textureCopy(sourceTexture: temporaryTexture,
+                                 destinationTexture: self.texture,
+                                 in: commandBuffer)
+                self.metalView.draw(texture: self.texture,
+                                    in: commandBuffer)
             }
         }
     }

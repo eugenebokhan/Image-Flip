@@ -1,11 +1,10 @@
 PODS:
-  - Alloy (0.14.1):
-    - Alloy/Core (= 0.14.1)
-  - Alloy/Core (0.14.1)
-  - Alloy/Shaders (0.14.1):
+  - Alloy (0.14.2):
+    - Alloy/Core (= 0.14.2)
+  - Alloy/Core (0.14.2)
+  - Alloy/Shaders (0.14.2):
     - Alloy/Core
   - Bonjour (2.0.0)
-  - DeviceKit (3.2.0)
   - MetalView (1.0.1):
     - Alloy (~> 0.14.1)
     - SwiftMath (~> 3.2.1)
@@ -16,10 +15,11 @@ PODS:
   - SnapKit (5.0.1)
   - SwiftGen (6.1.0)
   - SwiftMath (3.2.1)
-  - SwiftSnapshotTesting (0.0.1):
-    - Alloy/Shaders
-    - DeviceKit
-    - ResourcesBridge
+  - SwiftSnapshotTesting (0.1.0):
+    - SwiftSnapshotTesting/Device (= 0.1.0)
+  - SwiftSnapshotTesting/Device (0.1.0):
+    - Alloy/Shaders (~> 0.14.2)
+    - ResourcesBridge (~> 0.0.1)
 
 DEPENDENCIES:
   - Alloy/Shaders
@@ -33,7 +33,6 @@ SPEC REPOS:
   trunk:
     - Alloy
     - Bonjour
-    - DeviceKit
     - MetalView
     - PHAssetPicker
     - ResourcesBridge
@@ -46,17 +45,16 @@ EXTERNAL SOURCES:
     :path: "~/github/eugenebokhan/SwiftSnapshotTesting"
 
 SPEC CHECKSUMS:
-  Alloy: 699cc1a530ca68527ff2edea90584a68e72bd745
+  Alloy: b03b3db64505726e491c4b41643d651ee3e766cc
   Bonjour: a52029bab80a09db135341bfbfbd174856081d0a
-  DeviceKit: d081659419cce07c0b5239dbc9fb39ed7413c7fe
   MetalView: a5ed24394208ad036a5e34453bac9bee1928e36f
   PHAssetPicker: a307f33bbe06cc98430d9116b72f4be0cca05971
   ResourcesBridge: a807379462688203387b25180cbf6c5a30b04d9b
   SnapKit: 97b92857e3df3a0c71833cce143274bf6ef8e5eb
   SwiftGen: f872ca75cbd17bf7103c17f13dcfa0d9a15667b0
   SwiftMath: 5ae74160b077a63752d6cce4fbe85657dad6b534
-  SwiftSnapshotTesting: c9eb87ec279ad9157930882666491bd6fc2bf362
+  SwiftSnapshotTesting: 0ed99d7072f191c6aaa7270aa9da3d90d1614352
 
-PODFILE CHECKSUM: 5794ea8f7c4d0bf6edd8bb406c482aa5319a1928
+PODFILE CHECKSUM: 9487418c07d2fdd4f2f8d00b164a1e86ef7d5082
 
 COCOAPODS: 1.9.3

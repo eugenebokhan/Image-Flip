@@ -2,8 +2,9 @@ platform :ios, '13.2'
 
 source 'https://cdn.cocoapods.org/'
 
-use_frameworks!
 install! 'cocoapods', :disable_input_output_paths => true
+use_frameworks!
+inhibit_all_warnings!
 
 def pods
   pod 'Alloy/Shaders'
@@ -19,5 +20,5 @@ end
 
 target 'ImageFlipUITests' do
   pods
-  pod 'SwiftSnapshotTesting', :path => '~/github/eugenebokhan/SwiftSnapshotTesting'
+  pod 'SwiftSnapshotTesting'
 end
